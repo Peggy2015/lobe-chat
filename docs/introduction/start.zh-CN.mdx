@@ -1,0 +1,28 @@
+# Lobe chat的目标
+
+选择自己喜爱的平台，构建属于自己的 Lobe Chat。
+
+# Lobe chat的主要功能
+  - 多模型服务商支持
+  - 支持本地大语言模型 (LLM)
+  - 模型视觉识别 (Model Visual)
+  - TTS & STT 语音会话
+  - Text to Image 文生图
+  - 插件系统 (Function Calling)
+  - 助手市场 (GPTs)
+  - 渐进式 Web 应用 (PWA)
+  - 移动设备适配
+  - 自定义主题
+
+# Lobe chat 的Web UI组件库
+
+ - Lobe chat是使用next.js框架。next.js是一个轻量级的React服务端渲染应用框架。与reactjs、vue库不同的是支持服务端渲染。与nestjs（基于Angular）、nuxtjs（基于vue）是同类型的。
+ - 组件库是基于antdJs，antdJs是开箱即用的高质量 React 组件，使用 TypeScript 开发，提供完整的类型定义文件，支持多语言、主题定制能力。
+ - Lobe chat 的应用组件库基于antdJs，定制企业自己的交互语言和视觉风格。
+
+# Lobe chat 的Web UI组件库(antdJs)的设计
+- antdJs由多层组成，底层是通用的属性、变量。属性变量涵盖响应式、主题、国际化需要的变量维度。
+- 确定组件，组件一般按分为基础组件和高阶组件。基础组件基本所有的应用基本都会有，例如导航、按钮等。
+高阶组件，一般特定领域用的比较多，同时实现比较复杂，例如金融领域的输入金额、密码；硬件领域的3d；自媒体领域的剪辑等。
+- 再将组件编译构建成多种产物形式：npm包、js形式、module模块等。
+- 搭建组件库，还需要配备组件的测试体验场景平台、组件API使用文档平台。这些需要在设计组件的开发规范中一并考虑，尽量自动生成。
